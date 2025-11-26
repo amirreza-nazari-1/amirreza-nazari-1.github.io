@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.eot');
+    src: url('Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.woff') format('woff'),
+        url('Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: 'Roboto';
+}
+a{
+    text-decoration: none;
+}
+.col {
+    height: 30px;
+    width: 100px;
+}
+
+.nav-row {
+    height: 73px;
+}
+
+.navbar-custom {
+    width: 70px;
+}
+
+.nav-logo {
+    width: 150px;
+    margin-left: 6 0px;
+}
+
+.nav-search {
+    width: 88%;
+    height: 10px;
+    font-size: 18px;
+}
+
+.search-div {
+    height: 68px;
+}
+
+.navigation {
+    height: 140px;
+}
+
+.slider-ad {
+    background-image: linear-gradient(to right, rgb(149, 0, 255), rgb(32, 140, 255), #2222f9);
+    font-size: 2.7vw;
+}
+
+.active {
+    height: 70px;
+    width: 100%;
+}
+
+.slider-text2 {
+    width: 85%;
+    height: 50px;
+}
+
+.slider-text1 {
+    width: 87%;
+}
+
+/* ---------------------------------------------------------------------------images under navigation---------------------------------------------------------- */
+.all-explain-images {
+    height: 682px;
+    background-color: #0A0809;
+}
+
+.explain-images {
+    height: 312px;
+}
+
+/* --------------------------------------------------------------------------------sell images------------------------------------------------------------------- */
+.all-sell-images .row{
+    background-color: #0A0809;
+
+}
+
+
+.all-sell-images .col-6 {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.sell-img {
+    background-image: linear-gradient(to left, #bababa, #869FB5);
+}
+
+.sel-img-caption {
+    background-color: #1D2C3B;
+    height: 56px;
+    font-weight: 400;
+}
+
+/* ----------------------------------------------------------------------------dell technologies------------------------------------------------------------------------- */
+.dell-technologies-text{
+    width: 95%;
+    margin-right: 0px;
+
+
+}
+.technologies-text2{
+    font-weight: 300;
+    font-size: 32px;
+}
+
+
+.dell-carosel{
+    height: 133vw;
+}
+.carousel-caption-images{
+    width: 66vw;
+}
+.carousel-caption-images img{
+    height: 50vw;
+}
+
+/* dell captiopn */
+ 
+.tech-text1{
+    font-size: 16px;
+    font-weight: 500;
+}
+.tech-text2{
+   font-size: 24px;
+    font-weight: 300;
+}
+.tech-text3{
+    font-size: 16px;
+    font-weight: 400;
+}
+.all-tech-a{
+    width: 59vw;
+    height: 70px;
+    font-size: 18px;
+}
+.tech-next-img{
+    height: 40px;
+    width: 40px;
+}
