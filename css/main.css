@@ -10,7 +10,9 @@
     font-display: swap;
 }
 
-
+body {
+    background-color: #0A0809;
+}
 
 * {
     padding: 0;
@@ -18,76 +20,97 @@
     border: 0;
     font-family: 'Roboto';
 }
-a{
+
+a {
     text-decoration: none;
 }
-.col {
-    height: 30px;
-    width: 100px;
+
+/* --------------------------------navigation------------------------------- */
+.navigation {
+    height: 58px;
 }
 
 .nav-row {
-    height: 73px;
+    height: 58px;
 }
 
-.navbar-custom {
-    width: 70px;
+.nav-img-logo {
+    height: 23px;
+    width: 182px;
 }
 
-.nav-logo {
-    width: 150px;
-    margin-left: 6 0px;
+.nav-row i {
+    font-size: 25px;
 }
 
 .nav-search {
-    width: 88%;
-    height: 10px;
-    font-size: 18px;
+    width: 95%;
+    height: 48px;
+    margin-left: 10px;
 }
 
-.search-div {
-    height: 68px;
-}
-
-.navigation {
-    height: 140px;
-}
-
-.slider-ad {
-    background-image: linear-gradient(to right, rgb(149, 0, 255), rgb(32, 140, 255), #2222f9);
-    font-size: 2.7vw;
-}
-
-.active {
-    height: 70px;
+.nav-search-hide {
+    height: 32px;
     width: 100%;
 }
 
-.slider-text2 {
-    width: 85%;
+.search-box {
+    height: 68px;
+}
+
+
+/* ---------------------------------------------------------------------------images under navigation---------------------------------------------------------- */
+
+
+
+.under-nav-img img {
+    height: 65vw;
+}
+
+
+.under-nav-caption {
+    height: 39vw;
+}
+
+.under-caption1,
+.under-caption3 {
+    font-size: 16px;
+}
+
+.under-caption2 {
+    font-size: 32px;
+}
+
+.under-nav-costum-text {
+    width: 95%;
+    height: 174px;
+}
+
+.under-nav-caption-bottun1 {
+    width: 104px;
     height: 50px;
 }
 
-.slider-text1 {
-    width: 87%;
+.under-nav-caption-bottun2 {
+    width: 141px;
+    height: 50px;
 }
 
-/* ---------------------------------------------------------------------------images under navigation---------------------------------------------------------- */
-.all-explain-images {
-    height: 682px;
+.all-under-buttons {
+    height: 62px;
+}
+
+/* -----------------------------------------------------------sell images------------------------------------------- */
+
+
+
+.sell-img-container {
+    width: 95%;
+}
+
+.all-sell-images .row {
     background-color: #0A0809;
 }
-
-.explain-images {
-    height: 312px;
-}
-
-/* --------------------------------------------------------------------------------sell images------------------------------------------------------------------- */
-.all-sell-images .row{
-    background-color: #0A0809;
-
-}
-
 
 .all-sell-images .col-6 {
     padding-left: 4px;
@@ -96,57 +119,152 @@ a{
 
 .sell-img {
     background-image: linear-gradient(to left, #bababa, #869FB5);
+    position: relative;
 }
 
-.sel-img-caption {
+.sell-img-caption {
     background-color: #1D2C3B;
     height: 56px;
     font-weight: 400;
 }
 
-/* ----------------------------------------------------------------------------dell technologies------------------------------------------------------------------------- */
-.dell-technologies-text{
+.sell-hide-caption {
+    height: 40px;
+    position: absolute;
+    top: 0;
+}
+
+@media all and (min-width: 760px) and (max-width:991px) {
+
+    .sell-items .sell-img {
+        width: 15vw;
+    }
+
+    .sell-img-caption {
+        height: 12vw;
+    }
+}
+
+@media all and (min-width:992px) {
+    .sell-items {
+        width: 240px;
+    }
+
+    .sell-img {
+        width: 100%;
+        height: 20vw;
+    }
+
+
+}
+
+/* ----------------------------------------------------------------------------dell-technologies------------------------------------------------------------------------- */
+.dell-technologies {
+    background-color: #141D28;
+}
+
+.dell-tech-container {
+    height: 130vw;
+    position: relative;
+}
+
+.dell-technologies-text {
     width: 95%;
     margin-right: 0px;
 
 
 }
-.technologies-text2{
+
+.technologies-text2 {
     font-weight: 300;
     font-size: 32px;
 }
 
 
-.dell-carosel{
-    height: 133vw;
+.dell-carosel {
+    height: 96vw;
 }
-.carousel-caption-images{
+
+.carousel-caption-images {
     width: 66vw;
 }
-.carousel-caption-images img{
+
+.carousel-caption-images img {
     height: 50vw;
 }
 
+.carousel-bottom {
+    background-color: #141D28;
+}
+
 /* dell captiopn */
- 
-.tech-text1{
+
+.tech-text1 {
     font-size: 16px;
     font-weight: 500;
 }
-.tech-text2{
-   font-size: 24px;
+
+.tech-text2 {
+    font-size: 24px;
     font-weight: 300;
 }
-.tech-text3{
+
+.tech-text3 {
     font-size: 16px;
     font-weight: 400;
 }
-.all-tech-a{
+
+.all-tech-a {
     width: 59vw;
     height: 70px;
     font-size: 18px;
 }
-.tech-next-img{
+
+.tech-next-img {
     height: 40px;
     width: 40px;
 }
+
+.tech-next-img-left {
+    transform: translateX(20px);
+}
+
+.tech-next-img-right {
+    transform: translateX(-20px);
+}
+
+/* ------------------------------------------------------------dell-stroies-video--------------------------------------- */
+.dell-stories {
+    height: 41vw;
+    background-image: url("../images/stories/1.avif");
+    background-size: contain;
+    /* filter: brightness(40%); */
+
+}
+
+
+.dell-stories p {
+    text-align: center;
+}
+
+.story-text1,
+.story-text3 {
+    font-size: 16px;
+}
+
+.story-text2 {
+    font-size: 32px;
+}
+
+.story-button {
+
+    padding: 11px 19px 11px 19px;
+    background-color: rgb(6, 114, 203);
+}
+
+
+
+
+<div class="navigation  d-flex bg-white"><div class="container "><div class="row nav-row align-items-center"><div class="col-1  h-75 d-flex  justify-content-cneter bg-success"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+aria-controls="offcanvasScrolling">Enable body scrolling</button><div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel"><div class="offcanvas-header"><h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5><button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button></div><div class="offcanvas-body"><p>Try scrolling the rest of the page to see this option in action.</p></div></div></div><div class="col-8  h-75 d-flex bg-danger"><img src="images/nav/1.crdownload" class="nav-logo align-self-center w-75 p-0 " alt=""></div><div class="col-1 fs-1 "><i class="bi bi-person-circle text-secondary me-1 "></i></div><div class="col-1 fs-1 "><i class="bi bi-cart text-secondary ms-2"></i></div></div><div class="row "><div class="search-div w-100 flex-column align-items-center border-bottom border-2"><div class="col-12 border"><div class="search-icon d-flex flex-row align-items-center  justify-content-between"><input type="search" placeholder="Search Dell" class="nav-search offset-0 p-4 "><i class="bi bi-search fs-4 text-secondary me-3"></i></div></div></div></div>
