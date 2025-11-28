@@ -12,6 +12,7 @@
 
 body {
     background-color: #0A0809;
+    width: 100%;
 }
 
 * {
@@ -25,7 +26,34 @@ a {
     text-decoration: none;
 }
 
+/* ----------------------------------------------------------Virtual assistant and Contact------------------------------------------ */
+
+.virtual-assistant {
+    width: 40px;
+    height: 40px;
+    background-image: linear-gradient(to right, rgb(0, 68, 255), rgb(112, 0, 0), rgb(55, 0, 113));
+    z-index: 10;
+    bottom: 20px;
+    right: 70px;
+    position: fixed;
+    border-radius: 2px;
+    font-size: 20px;
+}
+
+.contact {
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 20px;
+    position: fixed;
+    z-index: 10;
+    border-radius: 2px;
+    font-size: 20px;
+}
+
 /* --------------------------------navigation------------------------------- */
+
+
 .navigation {
     height: 58px;
 }
@@ -58,18 +86,31 @@ a {
     height: 68px;
 }
 
+@media all and (min-width:992px) {
+    .navigation span {
+        font-size: 14px;
+    }
+
+    .navigation i {
+        font-size: 16px;
+        margin-right: 5px;
+    }
+
+}
+
+/* ---------------------------------part-navigation------------------------------------------- */
+.part2-navigation {
+    font-size: 14px;
+}
 
 /* ---------------------------------------------------------------------------images under navigation---------------------------------------------------------- */
-
-
-
 .under-nav-img img {
     height: 65vw;
 }
 
-
 .under-nav-caption {
-    height: 39vw;
+    height: calc(150px + 29vw);
+    background-color: white;
 }
 
 .under-caption1,
@@ -98,6 +139,19 @@ a {
 
 .all-under-buttons {
     height: 62px;
+}
+
+@media all and (min-width:992px) {
+    .under-nav-caption {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0);
+        left: 0;
+        top: 2%;
+    }
+
+    .under-nav-inner {
+        height: 46vw;
+    }
 }
 
 /* -----------------------------------------------------------sell images------------------------------------------- */
@@ -159,13 +213,21 @@ a {
 }
 
 /* ----------------------------------------------------------------------------dell-technologies------------------------------------------------------------------------- */
+.all-technology-img-caption {
+    height: calc(500px + 40vw);
+}
+
 .dell-technologies {
     background-color: #141D28;
+    height: calc(700px + 40vw);
+
+
 }
 
 .dell-tech-container {
     height: 130vw;
     position: relative;
+
 }
 
 .dell-technologies-text {
@@ -182,7 +244,7 @@ a {
 
 
 .dell-carosel {
-    height: 96vw;
+    height: calc(650px + 26vw);
 }
 
 .carousel-caption-images {
@@ -195,9 +257,21 @@ a {
 
 .carousel-bottom {
     background-color: #141D28;
+    opacity: 0.5;
+    transform: translateY(-60px);
+}
+
+@media all and (max-width:625px) {
+    .carousel-bottom {
+        transform: translateY(-200px);
+    }
 }
 
 /* dell captiopn */
+.all-texts {
+    z-index: 5;
+
+}
 
 .tech-text1 {
     font-size: 16px;
@@ -235,13 +309,20 @@ a {
 
 /* ------------------------------------------------------------dell-stroies-video--------------------------------------- */
 .dell-stories {
-    height: 41vw;
-    background-image: url("../images/stories/1.avif");
-    background-size: contain;
+    height: calc(500px + 31vw);
+    /* background-image: url("../images/stories/1.avif");
+    background-size: contain; */
     /* filter: brightness(40%); */
+    position: relative;
+    z-index: -3;
 
 }
 
+.all-story-text {
+    width: 90vw;
+    height: 20vw;
+    position: absolute;
+}
 
 .dell-stories p {
     text-align: center;
@@ -257,11 +338,11 @@ a {
 }
 
 .story-button {
-
+    width: 148px;
+    height: 50px;
     padding: 11px 19px 11px 19px;
     background-color: rgb(6, 114, 203);
 }
-
 
 
 
