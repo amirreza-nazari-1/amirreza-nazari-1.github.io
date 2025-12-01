@@ -11,8 +11,7 @@
 }
 
 body {
-    background-color: #0A0809;
-    width: 100%;
+    background-color: #1D2C3B;
 }
 
 * {
@@ -25,9 +24,27 @@ body {
 a {
     text-decoration: none;
 }
+/* -----------------------------------------------same sizes------------------------------------ */
 
+.font-32{
+    font-size: 32px;
+}
+.width-95{
+    width: 95%;
+}
+.font-16{
+    font-size: 16px;
+}
+.font-14{
+    font-size: 14px;
+}
+.list-none{
+    list-style-type: none;
+}
+.li-padding-btm li{
+    padding-bottom: 20px;
+}
 /* ----------------------------------------------------------Virtual assistant and Contact------------------------------------------ */
-
 .virtual-assistant {
     width: 40px;
     height: 40px;
@@ -52,8 +69,6 @@ a {
 }
 
 /* --------------------------------navigation------------------------------- */
-
-
 .navigation {
     height: 58px;
 }
@@ -95,7 +110,6 @@ a {
         font-size: 16px;
         margin-right: 5px;
     }
-
 }
 
 /* ---------------------------------part-navigation------------------------------------------- */
@@ -155,9 +169,6 @@ a {
 }
 
 /* -----------------------------------------------------------sell images------------------------------------------- */
-
-
-
 .sell-img-container {
     width: 95%;
 }
@@ -208,8 +219,6 @@ a {
         width: 100%;
         height: 20vw;
     }
-
-
 }
 
 /* ----------------------------------------------------------------------------dell-technologies------------------------------------------------------------------------- */
@@ -220,28 +229,22 @@ a {
 .dell-technologies {
     background-color: #141D28;
     height: calc(700px + 40vw);
-
-
 }
 
 .dell-tech-container {
     height: 130vw;
     position: relative;
-
 }
 
 .dell-technologies-text {
     width: 95%;
     margin-right: 0px;
-
-
 }
 
 .technologies-text2 {
     font-weight: 300;
     font-size: 32px;
 }
-
 
 .dell-carosel {
     height: calc(650px + 26vw);
@@ -310,9 +313,6 @@ a {
 /* ------------------------------------------------------------dell-stroies-video--------------------------------------- */
 .dell-stories {
     height: calc(500px + 31vw);
-    /* background-image: url("../images/stories/1.avif");
-    background-size: contain; */
-    /* filter: brightness(40%); */
     position: relative;
     z-index: -3;
 
@@ -344,8 +344,233 @@ a {
     background-color: rgb(6, 114, 203);
 }
 
+/* -----------------------------------------------dell-supports-------------------------------------------------------------- */
+.all-support-items {
+    background-color: #1D2C3B;
+}
+
+.support-row {
+    width: 95%;
+    text-align: center;
+}
+
+.dell-support-text {
+    width: 70%;
+    height: 128px;
+}
+
+.support-text1 {
+    font-size: 32px;
+}
+
+.support-col {
+    height: 99px;
+    background-color: rgba(245, 246, 247, 0.1);
+}
+
+.support-i {
+    font-size: 40px;
+    color: rgb(144, 198, 204);
+}
+
+.support-i span {
+    font-size: 16px;
+}
+
+/* ------------------------------------dell-account---------------------------------------- */
+.dell-account {
+    width: 95%;
+}
+
+.dell-account-caption {
+    height: 331px;
+    background-color: #002a58;
+}
+
+.dell-account-buttons {
+    width: 94%;
+}
+
+.account-button1 {
+    width: 36.8vw;
+    height: 48px;
+}
+
+.account-button2 {
+    width: 50vw;
+    height: 48px;
+}
+
+.account-text1 {
+    font-size: 24px
+}
+
+.dell-account-ul {
+    list-style-type: none;
+}
+
+.dell-account-ul li {
+    text-align: center;
+    width: 20vw;
+}
+
+.dell-account-ul li i {
+    font-size: 35px;
+}
+
+.dell-under-account-caption {
+    background-color: #141D28;
+    height: calc(420px + 20vw);
+}
+
+@media all and (min-width:768px) {
+    .md-size-dell-account-caption {
+        top: 10px;
+        left: 10px;
+        width: 50vw;
+        height: 120px;
+        background-color: rgba(0, 0, 0, 0);
+        position: absolute;
+    }
+
+    .md-size-dell-account-ul {
+        height: 100px;
+        width: 50vw;
+        font-size: 10px;
+    }
+
+    .all-md-size-dell-account-caption {
+        background-color: rgba(0, 42, 88, 0.5);
+    }
+}
+
+/* ----------------------------------------------------------------lates dell technology----------------------------------------------------------- */
+
+.lates-dell-technology{
+    /* height: 146vw; */
+    background-color: #002a58;
+}
+.lates-value{
+    width: 93%;
+}
+
+.dell-lates-col{
+    height: 24.5vw;
+}
+.dell-lates-col img{
+    width: 25vw;
+}
+.lates-header-text1{
+    font-size: 32px;
+}
+
+.dell-lates-bottom{
+    height: 80px;
+}
+@media all and (min-width:992px){
+    .lates-row{
+        height: 460px;
+    }
+    .lates-value img{
+        width: 18.6vw;
+    }
+    .lates-value{
+        width: 80.4vw;
+    }
+    .lates-col-span{
+        height: 208px;
+        font-size: 20px;
+    }
+    .dell-lates-col{
+        height: 368px;
+    }
+    .lates-col-span-hide{
+        font-size: 16px;
+        bottom: 10px;
+        left: 15px;
+    }
+    .all-lates-img-caption{
+        background-color: rgba(0, 0, 0, 0.45);
+        width: 18.6vw;
+    } 
+}
+/* ---------------------------------------------------------Dell-Rewards------------------------------------------ */
+.dell-rewards{
+    background-image: linear-gradient(to right, #002a58, #234264, #002a58) ;
+}
+.dell-rewards-value{
+    width: 93%;
+}
+.dell-rewards-img{
+    width: 100%;
+}
+.reward-button1{
+    height: 48px;
+    background-color: rgb(6, 114, 203);
+}
+@media all and (min-width:767px){
+    .dell-rewards{
+        height: 52vw;
+    }
+    .dell-rewards-img{
+        width: 57vw;
+    }
+}
+/* -------------------------------------------------------dell-survey---------------------------------------------------------- */
+.dell-survey{
+    background-color: #002a58;
+    height: 174px;
+}
+.dell-survey i{
+    font-size: 33px;
+}
+.cookie{
+    background-image: linear-gradient(to right, #25507d, #0253a9);
+    width: 40px;
+    height: 40px;transform: translate(30px, -43px);
+}
+.stars{
+    width: 50%;
+}
+/* ------------------------------------------------------footer---------------------------------------------------------- */
 
 
-<div class="navigation  d-flex bg-white"><div class="container "><div class="row nav-row align-items-center"><div class="col-1  h-75 d-flex  justify-content-cneter bg-success"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
-aria-controls="offcanvasScrolling">Enable body scrolling</button><div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
-id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel"><div class="offcanvas-header"><h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5><button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button></div><div class="offcanvas-body"><p>Try scrolling the rest of the page to see this option in action.</p></div></div></div><div class="col-8  h-75 d-flex bg-danger"><img src="images/nav/1.crdownload" class="nav-logo align-self-center w-75 p-0 " alt=""></div><div class="col-1 fs-1 "><i class="bi bi-person-circle text-secondary me-1 "></i></div><div class="col-1 fs-1 "><i class="bi bi-cart text-secondary ms-2"></i></div></div><div class="row "><div class="search-div w-100 flex-column align-items-center border-bottom border-2"><div class="col-12 border"><div class="search-icon d-flex flex-row align-items-center  justify-content-between"><input type="search" placeholder="Search Dell" class="nav-search offset-0 p-4 "><i class="bi bi-search fs-4 text-secondary me-3"></i></div></div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container-fluide">
+      <div class="row pb-4">
+        <div class="col-12 d-flex justify-content-between align-items-center footer-col width-95 m-auto my-3"><span>Account</span><span></span></div>
+        <div class="col-12 d-flex justify-content-between align-items-center footer-col width-95 m-auto my-3"></div>
+        <div class="col-12 d-flex justify-content-between align-items-center footer-col width-95 m-auto my-3"><span>Support</span><span></span></div>
+        <div class="col-12 d-flex justify-content-between align-items-center footer-col width-95 m-auto my-3"><span>Connect with Us</span><span></span></div>
+        <div class="col-12 d-flex justify-content-between align-items-center footer-col width-95 m-auto my-3"><span>Site Map</span><span></span></div>
+        <div class="col-12 d-flex justify-content-between align-items-center footer-col width-95 m-auto my-3"><span><i class="bi bi-globe"></i> US/EN</span><span></span></div>
+      </div>
+      <div class="row pb-5">
+        <div class="col-12 d-flex justify-content-between align-items-center footer-col width-95 m-auto my-3"><span> Our Offerings </span><span></span></div>
+        <div class="col-12 d-flex justify-content-between align-items-center footer-col width-95 m-auto my-3"><span> Our Company </span><span></span></div>
+        <div class="col-12 d-flex justify-content-between align-items-center footer-col width-95 m-auto my-3"><span> Our Partners </span><span></span></div>
+        <div class="col-12 d-flex justify-content-between align-items-center footer-col width-95 m-auto my-3"><span>Site Map</span><span></span></div>
+        <div class="col-12 d-flex justify-content-between align-items-center footer-col width-95 m-auto my-3"><span> Resources </span><span></span></div>
+      </div>
+      <div class="row pb-5">
+        <div class="col-12 width-95 m-auto pb-4 d-flex align-items-center justify-content-start fw-bold">Dell Technologies</div>
+        <div class="col-12 width-95 m-auto pb-4 d-flex align-items-center justify-content-start fw-bold">Dell Premier for Business</div>
+        <div class="col-12 width-95 m-auto pb-4 d-flex align-items-center justify-content-start fw-bold">Dell Financial Services</div>
+      </div>
