@@ -11,7 +11,7 @@
 }
 
 body {
-    background-color: #1D2C3B;
+    background-color: #0A0809;
 }
 
 * {
@@ -25,7 +25,9 @@ a {
     text-decoration: none;
 }
 /* -----------------------------------------------same sizes------------------------------------ */
-
+.font-24{
+    font-size: 24px;
+}
 .font-32{
     font-size: 32px;
 }
@@ -44,6 +46,37 @@ a {
 .li-padding-btm li{
     padding-bottom: 20px;
 }
+.padding-btm-20{
+    padding-bottom: 100px;
+}
+.hover-background-2, .hover-button, .hover-color, .hover-filter, .hover-background{
+    cursor: pointer;
+}
+.hover-background:hover{
+    background-color: rgba(0, 0, 0, 0.101);
+    transform: scaleY(2.5);
+}
+.hover-background:hover span{
+    transform: scaleY(0.4);
+}
+.hover-background-2:hover{
+    background-color: rgba(255, 255, 255, 0.446);
+}
+.hover-color:hover{
+    color: black;
+}
+.hover-button:hover{
+    background-color: white;
+}
+.hover-button:hover span{
+    color: black;
+}
+.hover-filter:hover{
+    filter: brightness(50%);
+}
+.hover-a{
+    border-bottom: 1px solid black;
+}
 /* ----------------------------------------------------------Virtual assistant and Contact------------------------------------------ */
 .virtual-assistant {
     width: 40px;
@@ -56,7 +89,6 @@ a {
     border-radius: 2px;
     font-size: 20px;
 }
-
 .contact {
     width: 40px;
     height: 40px;
@@ -67,16 +99,10 @@ a {
     border-radius: 2px;
     font-size: 20px;
 }
-
 /* --------------------------------navigation------------------------------- */
-.navigation {
+.navigation, .nav-row {
     height: 58px;
 }
-
-.nav-row {
-    height: 58px;
-}
-
 .nav-img-logo {
     height: 23px;
     width: 182px;
@@ -112,11 +138,6 @@ a {
     }
 }
 
-/* ---------------------------------part-navigation------------------------------------------- */
-.part2-navigation {
-    font-size: 14px;
-}
-
 /* ---------------------------------------------------------------------------images under navigation---------------------------------------------------------- */
 .under-nav-img img {
     height: 65vw;
@@ -126,16 +147,6 @@ a {
     height: calc(150px + 29vw);
     background-color: white;
 }
-
-.under-caption1,
-.under-caption3 {
-    font-size: 16px;
-}
-
-.under-caption2 {
-    font-size: 32px;
-}
-
 .under-nav-costum-text {
     width: 95%;
     height: 174px;
@@ -176,12 +187,6 @@ a {
 .all-sell-images .row {
     background-color: #0A0809;
 }
-
-.all-sell-images .col-6 {
-    padding-left: 4px;
-    padding-right: 4px;
-}
-
 .sell-img {
     background-image: linear-gradient(to left, #bababa, #869FB5);
     position: relative;
@@ -240,57 +245,32 @@ a {
     width: 95%;
     margin-right: 0px;
 }
-
-.technologies-text2 {
-    font-weight: 300;
-    font-size: 32px;
-}
-
-.dell-carosel {
-    height: calc(650px + 26vw);
-}
-
 .carousel-caption-images {
     width: 66vw;
 }
-
 .carousel-caption-images img {
     height: 50vw;
 }
-
 .carousel-bottom {
     background-color: #141D28;
     opacity: 0.5;
     transform: translateY(-60px);
 }
 
-@media all and (max-width:625px) {
+@media all and (max-width:625px){
     .carousel-bottom {
-        transform: translateY(-200px);
+        transform: translateY(-20px);
     }
 }
-
+@media all and (min-width:625px) {
+    .carousel-bottom {
+        transform: translateY(-20px);
+    }
+}
 /* dell captiopn */
 .all-texts {
     z-index: 5;
-
 }
-
-.tech-text1 {
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.tech-text2 {
-    font-size: 24px;
-    font-weight: 300;
-}
-
-.tech-text3 {
-    font-size: 16px;
-    font-weight: 400;
-}
-
 .all-tech-a {
     width: 59vw;
     height: 70px;
@@ -310,11 +290,18 @@ a {
     transform: translateX(-20px);
 }
 
+@media all and (min-width:991px){
+    .dell-technologies-captio{
+        top: 0;
+    }
+}
 /* ------------------------------------------------------------dell-stroies-video--------------------------------------- */
 .dell-stories {
     height: calc(500px + 31vw);
     position: relative;
     z-index: -3;
+    background-image: url("../images/stories/1.avif");
+    background-size: cover;
 
 }
 
@@ -322,8 +309,8 @@ a {
     width: 90vw;
     height: 20vw;
     position: absolute;
+    opacity: 0.8;
 }
-
 .dell-stories p {
     text-align: center;
 }
@@ -355,7 +342,7 @@ a {
 }
 
 .dell-support-text {
-    width: 70%;
+    width: 85.5%;
     height: 128px;
 }
 
@@ -364,7 +351,7 @@ a {
 }
 
 .support-col {
-    height: 99px;
+    height: calc(50px + 5vw);
     background-color: rgba(245, 246, 247, 0.1);
 }
 
@@ -420,8 +407,7 @@ a {
 
 .dell-under-account-caption {
     background-color: #141D28;
-    height: calc(420px + 20vw);
-}
+    height: calc(420px + 15vw);}
 
 @media all and (min-width:768px) {
     .md-size-dell-account-caption {
@@ -447,7 +433,6 @@ a {
 /* ----------------------------------------------------------------lates dell technology----------------------------------------------------------- */
 
 .lates-dell-technology{
-    /* height: 146vw; */
     background-color: #002a58;
 }
 .lates-value{
@@ -527,50 +512,13 @@ a {
 .cookie{
     background-image: linear-gradient(to right, #25507d, #0253a9);
     width: 40px;
-    height: 40px;transform: translate(30px, -43px);
+    height: 40px; transform: translate(30px, -43px);
 }
-.stars{
-    width: 50%;
+
+.dell-survey .row{
+    width: 80%;
 }
-/* ------------------------------------------------------footer---------------------------------------------------------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="container-fluide">
-      <div class="row pb-4">
-        <div class="col-12 d-flex justify-content-between align-items-center footer-col width-95 m-auto my-3"><span>Account</span><span></span></div>
-        <div class="col-12 d-flex justify-content-between align-items-center footer-col width-95 m-auto my-3"></div>
-        <div class="col-12 d-flex justify-content-between align-items-center footer-col width-95 m-auto my-3"><span>Support</span><span></span></div>
-        <div class="col-12 d-flex justify-content-between align-items-center footer-col width-95 m-auto my-3"><span>Connect with Us</span><span></span></div>
-        <div class="col-12 d-flex justify-content-between align-items-center footer-col width-95 m-auto my-3"><span>Site Map</span><span></span></div>
-        <div class="col-12 d-flex justify-content-between align-items-center footer-col width-95 m-auto my-3"><span><i class="bi bi-globe"></i> US/EN</span><span></span></div>
-      </div>
-      <div class="row pb-5">
-        <div class="col-12 d-flex justify-content-between align-items-center footer-col width-95 m-auto my-3"><span> Our Offerings </span><span></span></div>
-        <div class="col-12 d-flex justify-content-between align-items-center footer-col width-95 m-auto my-3"><span> Our Company </span><span></span></div>
-        <div class="col-12 d-flex justify-content-between align-items-center footer-col width-95 m-auto my-3"><span> Our Partners </span><span></span></div>
-        <div class="col-12 d-flex justify-content-between align-items-center footer-col width-95 m-auto my-3"><span>Site Map</span><span></span></div>
-        <div class="col-12 d-flex justify-content-between align-items-center footer-col width-95 m-auto my-3"><span> Resources </span><span></span></div>
-      </div>
-      <div class="row pb-5">
-        <div class="col-12 width-95 m-auto pb-4 d-flex align-items-center justify-content-start fw-bold">Dell Technologies</div>
-        <div class="col-12 width-95 m-auto pb-4 d-flex align-items-center justify-content-start fw-bold">Dell Premier for Business</div>
-        <div class="col-12 width-95 m-auto pb-4 d-flex align-items-center justify-content-start fw-bold">Dell Financial Services</div>
-      </div>
+.dell-footer li span:hover{
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
